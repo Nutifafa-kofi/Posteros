@@ -132,13 +132,7 @@ form {
   padding: 34px;
 }
 
-.fill-form h3 {
-  text-align: center;
-  font-weight: 600;
-  font-size: 1.2rem;
-  line-height: 100%;
-  margin-bottom: 20px;
-}
+
 
 label {
   display: block;
@@ -178,8 +172,9 @@ select {
 h3 {
   text-align: center;
   font-weight: 600;
-  font-size: 24px;
-  padding: 100px 0 52px 0;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+
 }
 
 .our-services {
@@ -188,10 +183,8 @@ h3 {
   justify-content: center;
 }
 
-#services {
-  background-color: #ffa62b;
+#services { 
   margin-bottom: 120px;
-  /* padding: 100px 0; */
 }
 
 .services {
