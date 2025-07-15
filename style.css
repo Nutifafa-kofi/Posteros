@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  
 }
 
 header {
@@ -13,47 +14,47 @@ header {
 
 .navbar {
   display: flex;
-  gap: 32.0625rem;
   align-items: center;
-  justify-content: space-evenly;
-  padding: 2rem;
+  justify-content: space-between;
+  padding: 35px 102px;
 }
 
 .logo {
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 24px;
   line-height: 100%;
   color: #ffa62b;
+  text-transform: uppercase;
 }
 
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 2.5625rem;
+  gap: 41px;
 }
 
 .nav-links ul {
   display: flex;
-  gap: 1.75rem;
+  gap: 28px;
   list-style: none;
 }
 
 .nav-links a {
   text-decoration: none;
   font-weight: 400;
-  font-size: 1.25rem;
+  font-size: 20px;
   line-height: 100%;
   color: #000000;
 }
 
 .nav-btn {
-  padding: 0.75rem 1.6875rem;
+  padding: 12px 27px;
   border: none;
   border-radius: 10px;
   background-color: #ffa62b;
   color: #ffffff;
   font-weight: 600;
-  font-size: 1.25rem;
+  font-size: 20px;
 }
 
 .hero {
@@ -61,61 +62,57 @@ header {
   align-items: center;
   justify-content: space-around;
   max-width: 1280px;
-  margin: 0 auto;
 }
 
 .header-texts {
   display: flex;
   flex-direction: column;
-  gap: 1.4375rem;
+  gap: 23px;
 }
 
 .header-texts h1 {
   font-weight: 800;
-  font-size: 3rem;
-  line-height: 4.375rem;
+  font-size: 48px;
   width: 100%;
-  max-width: 350px;
+  max-width: 480px;
 }
 
 .header-texts p {
   font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.625rem;
+  font-size: 16px;
   width: 100%;
-  max-width: 320px;
+  max-width: 450px;
   text-transform: capitalize;
 }
 
 .header-elements {
   display: flex;
   flex-direction: column;
-  gap: 3.3125rem;
+  gap: 53px;
 }
 
 .hero-btns {
   display: flex;
-  gap: 1.125rem;
+  gap: 18px;
 }
 
 .join-btn {
-  padding: 1.0625rem 3.5rem;
+  padding: 17px 56px;
   border: none;
   border-radius: 27px;
   background-color: #00a0c1;
   color: #ffffff;
   font-weight: 800;
-  font-size: 1.25rem;
-  line-height: 1.25rem;
+  font-size: 20px;
+  
 }
 
 .learn-btn {
-  padding: 1.0625rem 2.5rem;
+  padding: 17px 40px;
   border: 1px solid #00a0c1;
   border-radius: 27px;
   font-weight: 400;
-  font-size: 1.25rem;
-  line-height: 1.25rem;
+  font-size: 20px;
   color: #00a0c1;
   background-color: transparent;
 }
@@ -129,6 +126,7 @@ header {
   background-color: #ffffff;
   border-radius: 19px;
   padding: 41px 34px 34px 34px;
+  margin-top: 77px;
 }
 
 .form-container h3 {
@@ -140,7 +138,7 @@ header {
 .form__field--container {
   display: flex;
   flex-direction: column;
-  gap: 1.4375rem;
+  gap: 23px;
   width: 100%;
 }
 
@@ -153,13 +151,12 @@ header {
 .form-field label {
   font-weight: 600;
   font-size: 17px;
-  line-height: 100%;
   color: #000000b0;
 }
 
 input,
 select {
-  padding: 17px 1.8125rem;
+  padding: 17px 29px;
   font-weight: 600;
   font-size: 17px;
   color: #bdbdbd;
@@ -185,7 +182,7 @@ select {
   text-align: center;
   padding: 122px 0 74px 0;
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 24px;
 }
 
 .services {
@@ -193,10 +190,10 @@ select {
   justify-content: center;
   gap: 25px;
 }
-
+              
 .vector {
   background-color: #ffa62b;
-  padding: 0.9375rem 0.625rem;
+  padding: 17px 13px;
   border-radius: 50%;
 }
 
@@ -222,7 +219,7 @@ select {
 }
 
 .card-lists {
-  list-style-position: inside;
+  list-style: none;
   border: 1px solid #00a0c1;
   border-radius: 30px;
   background-color: #ffffff;
@@ -235,6 +232,14 @@ select {
   color: #000000;
   margin-bottom: 28px;
   text-transform: capitalize;
+  padding-left: 16px;
+  position: relative;
+}
+
+.card-lists li::before {
+  content: "\2022";
+  position: absolute;
+  left: 0;
 }
 
 .learn-more {
@@ -249,7 +254,9 @@ select {
 .education {
   text-align: center;
   padding-top: 114px;
-  max-width: 100%;
+  width: 100%;
+  max-width: 434px;
+  margin: 0 auto;
 }
 
 .education h3 {
@@ -264,6 +271,7 @@ select {
   font-size: 16px;
   text-transform: lowercase;
   margin-bottom: 156px;
+  
 }
 
 .child-education {
@@ -271,6 +279,8 @@ select {
   height: 302px;
   border-top-right-radius: 151px;
   border-bottom-left-radius: 151px;
+  display: flex;
+  align-items: center;
   position: relative;
 }
 
@@ -291,6 +301,7 @@ select {
   height: 79.8px;
   position: relative;
   left: 43%;
+  bottom: 38%;
 }
 
 .gallery-heading {
@@ -304,7 +315,6 @@ select {
 .gallery {
   display: flex;
   justify-content: center;
-  align-items: center;
   margin-top: 59px;
 }
 
@@ -356,8 +366,8 @@ select {
 
 .social-icons {
   display: flex;
-  gap: 8px;
-  font-size: 28px;
+  gap: 15px;
+  font-size: 48px;
 }
 
 .footer-divider {
