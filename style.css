@@ -3,6 +3,12 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
   
 }
 
@@ -16,8 +22,9 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 35px 102px;
+  
 }
+
 
 .logo {
   font-weight: 600;
@@ -25,12 +32,15 @@ header {
   line-height: 100%;
   color: #ffa62b;
   text-transform: uppercase;
+  padding-left: 102px;
+  /* margin-left: 102px; */
 }
 
 .nav-links {
   display: flex;
   align-items: center;
   gap: 41px;
+  padding: 35px 102px;
 }
 
 .nav-links ul {
@@ -62,6 +72,7 @@ header {
   align-items: center;
   justify-content: space-around;
   max-width: 1280px;
+  margin: 0 auto;
 }
 
 .header-texts {
@@ -104,7 +115,6 @@ header {
   color: #ffffff;
   font-weight: 800;
   font-size: 20px;
-  
 }
 
 .learn-btn {
@@ -190,7 +200,7 @@ select {
   justify-content: center;
   gap: 25px;
 }
-              
+
 .vector {
   background-color: #ffa62b;
   padding: 17px 13px;
@@ -271,7 +281,6 @@ select {
   font-size: 16px;
   text-transform: lowercase;
   margin-bottom: 156px;
-  
 }
 
 .child-education {
@@ -280,6 +289,7 @@ select {
   border-top-right-radius: 151px;
   border-bottom-left-radius: 151px;
   display: flex;
+  justify-content: center;
   align-items: center;
   position: relative;
 }
@@ -289,9 +299,7 @@ select {
   height: 348px;
   object-fit: cover;
   max-width: 723px;
-  position: absolute;
-  bottom: 30%;
-  left: 20%;
+  margin-bottom: 15%;
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
 }
@@ -299,9 +307,9 @@ select {
 .youtube-logo {
   width: 112.9px;
   height: 79.8px;
-  position: relative;
-  left: 43%;
-  bottom: 38%;
+  align-self: first baseline;
+  position: absolute;
+  top: 10px;
 }
 
 .gallery-heading {
