@@ -5,26 +5,23 @@
   font-family: "Poppins", sans-serif;
 }
 
-body {
-  width: 100%;
-  max-width: 1280px;
-  margin: 0 auto;
-  
-}
-
 header {
   background-color: #d9edff;
   width: 100%;
   padding-bottom: 34px;
 }
 
+header section {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  
 }
-
 
 .logo {
   font-weight: 600;
@@ -33,7 +30,6 @@ header {
   color: #ffa62b;
   text-transform: uppercase;
   padding-left: 102px;
-  /* margin-left: 102px; */
 }
 
 .nav-links {
@@ -291,25 +287,34 @@ select {
   display: flex;
   justify-content: center;
   align-items: center;
+  
+}
+
+.youtube-container {
   position: relative;
+  height: 348px;
+  min-width: 723px;
+  object-fit: cover;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  overflow: hidden;
+  transform: translateY(-76px);
 }
 
 .child-development {
   width: 100%;
-  height: 348px;
+  height: 100%;
   object-fit: cover;
-  max-width: 723px;
-  margin-bottom: 15%;
-  border-bottom-left-radius: 50px;
-  border-bottom-right-radius: 50px;
+  position: relative;
 }
 
 .youtube-logo {
   width: 112.9px;
   height: 79.8px;
-  align-self: first baseline;
   position: absolute;
-  top: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .gallery-heading {
